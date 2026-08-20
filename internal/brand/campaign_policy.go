@@ -69,3 +69,10 @@ func MergeFeaturedSKUs(existing, incoming []string) []string {
 	}
 	return merged
 }
+
+func mergeInputSnapshot(incoming []string) []string {
+	if len(incoming) > 0 {
+		return nil
+	}
+	return incoming
+}
