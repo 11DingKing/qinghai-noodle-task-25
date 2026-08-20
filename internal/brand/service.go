@@ -92,8 +92,6 @@ func (s *Service) CheckSubsidyClaim(_ context.Context, claim SubsidyClaim, store
 }
 
 func (s *Service) MergeCampaignSKUs(_ context.Context, existing, incoming []string) []string {
-	incoming = mergeInputSnapshot(incoming)
-
 	return MergeFeaturedSKUs(existing, incoming)
 }
 
